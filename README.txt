@@ -58,6 +58,14 @@ dynamic-card-app/
 - **HTML & CSS** — For structuring and styling the UI.
 - **Angular CLI** — For scaffolding, development server, and builds.
 
+## Output
+
+### ✅ Home Page with Cards
+Displays a list of cards with titles, descriptions, and edit buttons.
+
+### ✅ Edit Modal Popup
+Edit card description using a popup modal.
+
 ## 📬 Contact
 
 For any questions, feedback, or contributions, feel free to reach out:
