@@ -50,5 +50,12 @@
       }
     }
   },
+<<<<<<< HEAD
   "defaultProject": "dynamic-card-app"
+=======
+  "defaultProject": "dynamic-card-app",
+  "cli": {
+    "analytics": false
+  }
+>>>>>>> 4de0fd75 (Commit of Dynamic Card App)
 }

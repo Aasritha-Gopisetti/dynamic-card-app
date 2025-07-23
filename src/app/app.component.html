@@ -7,6 +7,21 @@
   </div>
 
   <app-edit-modal *ngIf="selectedCard" [card]="selectedCard"
+
+  <!-- Add Card Button -->
+  <button (click)="addNewCard()" style="margin-bottom: 20px;">+ Add Card</button>
+
+  <!-- Card List -->
+  <div *ngFor="let card of cards" style="background: #fff; margin: 10px 0; padding: 10px; border-radius: 5px;">
+    <h3>{{ card.title }}</h3>
+    <p>{{ card.description }}</p>
+    <button (click)="openEditModal(card)">Edit</button>
+    <button (click)="deleteCard(card)" style="margin-left: 10px; color: red;">Delete</button>
+  </div>
+
+  <!-- Modal for Editing/Adding -->
+  <app-edit-modal *ngIf="selectedCard"
+                  [card]="selectedCard"
                   (save)="saveDescription($event)"
                   (cancel)="cancelEdit()">
   </app-edit-modal>
