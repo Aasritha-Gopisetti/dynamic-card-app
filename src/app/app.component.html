@@ -20,9 +20,10 @@
   </div>
 
   <!-- Modal for Editing/Adding -->
-  <app-edit-modal *ngIf="selectedCard"
-                  [card]="selectedCard"
-                  (save)="saveDescription($event)"
-                  (cancel)="cancelEdit()">
+  <app-edit-modal
+    *ngIf="selectedCard"
+    [card]="selectedCard"
+    (save)="saveDescription($event)"
+    (cancel)="cancelEdit()">
   </app-edit-modal>
 </div>
