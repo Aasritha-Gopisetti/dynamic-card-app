@@ -1,0 +1,13 @@
+<div style="padding: 20px;">
+  <h1>Dynamic Card App</h1>
+  <div *ngFor="let card of cards" style="background: #fff; margin: 10px 0; padding: 10px; border-radius: 5px;">
+    <h3>{{card.title}}</h3>
+    <p>{{card.description}}</p>
+    <button (click)="openEditModal(card)">Edit</button>
+  </div>
+
+  <app-edit-modal *ngIf="selectedCard" [card]="selectedCard"
+                  (save)="saveDescription($event)"
+                  (cancel)="cancelEdit()">
+  </app-edit-modal>
+</div>

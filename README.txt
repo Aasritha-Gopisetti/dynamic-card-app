@@ -1,0 +1,1 @@
+This is a placeholder for the Angular project. The full build will include all required code and assets.
